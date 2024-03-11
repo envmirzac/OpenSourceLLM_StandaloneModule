@@ -38,7 +38,8 @@ This flow ensures a seamless interaction between the user and the LLM, facilitat
 ### Steps
 1. Clone the repository to your local machine.
 2. Navigate to the root directory of the project.
-3. Run the following command to build and start the containers:
+3. In main.py, change the "model" parameter to the name of the LLM you use (by default, it is set to tinyllama)
+4. Run the following command to build and start the containers:
 ```bash
 docker-compose up --build
 ```
@@ -46,7 +47,8 @@ docker-compose up --build
 ```bash
 docker exec -it combinedproject-ollama-1 /bin/bash
 ```
-Then, run the Ollama specific command to pull your preferred LLM. For example, for "llama2 LLM", use `ollama run llama2`. For "mistral LLM", use `ollama run mistral`.
+Then, run the Ollama specific command to pull your preferred LLM. For example, for "llama2 LLM", use `ollama run llama2`. For "tinyllama LLM", use the command `ollama run tinyllama`.
+
 
 5. Once the containers are running and the LLM is pulled from Ollama Library, open a web browser and navigate to `http://localhost:8501` to access the Streamlit UI.
 

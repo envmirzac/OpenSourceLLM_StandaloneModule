@@ -14,7 +14,7 @@ async def process_message(message: Message):
         response = requests.post(
             'http://ollama:11434/api/generate',  # Ollama service URL
             json={
-                "model": "llama2",
+                "model": "tinyllama",
                 "prompt": message.content,
                 "stream": False  # Assuming you don't need a streaming response
             }
