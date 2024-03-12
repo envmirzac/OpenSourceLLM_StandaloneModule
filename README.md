@@ -9,7 +9,7 @@ The application is structured into three main components:
 
 1. **Streamlit UI**: A user-friendly web interface for users to input their messages and view the AI-processed responses.
 2. **FastAPI Service**: A backend API service that receives messages from the Streamlit UI, forwards them to the LLM for processing, and returns the responses. This is
-via Ollama's APIs (you can find the details/documentation here : https://github.com/ollama/ollama/blob/main/docs/api.md)
+done via Ollama's APIs (you can find the details/documentation here : https://github.com/ollama/ollama/blob/main/docs/api.md)
 3. **Ollama LLM**: The Large Language Model that processes the user input and generates responses. It's accessed via the FastAPI service.
 
 ### Container Interaction
