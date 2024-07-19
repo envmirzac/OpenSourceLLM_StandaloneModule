@@ -6,7 +6,7 @@ ollama start &
 sleep 10
 
 # Pull the LLM model
-ollama run llama2
+ollama run tinyllama
 
 # Keep the container running
 tail -f /dev/null
