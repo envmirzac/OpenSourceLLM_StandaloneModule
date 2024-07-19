@@ -44,11 +44,11 @@ This flow ensures a seamless interaction between the user and the LLM, facilitat
 ```bash
 docker-compose up --build
 ```
-4. To use a specific LLM, download it manually from the Ollama library at https://ollama.com/library. Enter the `combinedproject-ollama-1` container using the command:
+4. To use a specific LLM, download it manually from the Ollama library at https://ollama.com/library. Enter the `opensourcellm_standalonemodule-ollama-1` container using the command:
 ```bash
-docker exec -it combinedproject-ollama-1 /bin/bash
+docker exec -it opensourcellm_standalonemodule-ollama-1 /bin/bash
 ```
-Then, run the Ollama specific command to pull your preferred LLM. For example, for "llama2 LLM", use `ollama run llama2`. For "tinyllama LLM", use the command `ollama run tinyllama`.
+Then, run the Ollama specific command to pull your preferred LLM. For example, for "llama2 LLM", use `ollama run llama2`. For "tinyllama LLM", use the command `ollama run tinyllama` etc.
 
 
 5. Once the containers are running and the LLM is pulled from Ollama Library, open a web browser and navigate to `http://localhost:8501` to access the Streamlit UI.
